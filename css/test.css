@@ -1,37 +1,78 @@
-html,
-body {
-    position: relative;
+:root {
+    /* page colors */
+    --black: #111;
+    --grey: #1E1823;
+    --orange: #FD9222;
+    --dirty-white: #FAFAFA;
+    --white: #fff;
+    /* page font-style */
+    --montserrat: "Montserrat", sans-serif;
 }
-
-body {
-    /* background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000; */
-    background-color: black;
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
 }
-
-.swiper {
-    width: 100%;
+body{
+   background-color: bisque;
+    font-family: var(--montserrat);
+}
+.slider-section {
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+.slider-content{
+    margin: 0 40px;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 20px 0 20px;
+}
+.product-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 20px 0 20px;
+}
+.card{
+    border-radius: 15px;
+    background-color: var(--white);
+}
+.image-card{
+    position: relative;
+    height: 201px;
+    width: 230px;
+}
+.image-card .product-image{
     height: 100%;
+    width: 100%;
 }
-
-.swiper-slide {
-    text-align: center;
+/* product content */
+.product-content-header{
+    color: var(--black);
     font-size: 18px;
-    background: #fff;
+}
+.product-content-paragraph {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+}
+/* button */
+.product-button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border: 1px solid rgba(17, 17, 17, 0.10);
+    margin-bottom: 32px;
 }
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.product-content-button {
+    background: var(--dirty-white);
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 8px 20px;
+    margin-top: 18px;
+    font-weight: 600;
+}
+.product-content-button:hover {
+    background-color: var(--orange);
 }
