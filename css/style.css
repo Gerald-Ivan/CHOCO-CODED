@@ -263,6 +263,7 @@ body {
 @media (min-width: 1158px) {
      .made-description {
         max-width: 516px;
+        height: 400px;
     }
     .made-video{
         margin-bottom: 0;
