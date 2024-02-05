@@ -239,7 +239,16 @@ body {
     }
 }
 
-@media (max-width: 427px) {}
+@media (max-width: 427px) {
+        .made-description {
+        max-width: 335px;
+    }
+     .made-video{
+        width: 100%;
+        max-width: 335px;
+        margin-bottom: 20px;
+    }
+}
 
 @media (min-width: 768px) {
     .made-description {
